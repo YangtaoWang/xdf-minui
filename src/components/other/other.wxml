@@ -1,0 +1,1 @@
+<view class="index other">{{prop}}-{{name}}测试组件</view>

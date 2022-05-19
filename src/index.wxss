@@ -1,0 +1,6 @@
+@import "./common/common.wxss";
+@import ".//common/reset.wxss";
+
+.index {
+  color: green;
+}

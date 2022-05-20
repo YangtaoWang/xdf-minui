@@ -1,4 +1,5 @@
-const _ = require('./util/utils')
+/* eslint-disable no-console */
+const _ = require('./utils')
 
 Component({
   properties: {
@@ -19,6 +20,13 @@ Component({
           })
         }
       })
+    }
+  },
+  methods: {
+    confirm(e) {
+      console.log('33')
+      // eslint-disable-next-line no-console
+      console.log('e', e)
     }
   }
 })

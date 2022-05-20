@@ -1,2 +1,3 @@
-<view class="index other">{{prop}}-{{flag}}</view>
+<view class="index other">{{prop}}-{{flag}}测试</view>
 <other></other>
+<bind-input autoSubmit="{{true}}" bindconfirm="confirm"></bind-input>

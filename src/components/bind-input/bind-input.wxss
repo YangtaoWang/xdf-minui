@@ -1,0 +1,54 @@
+/* components/bind-input/bind-input.wxss */
+.inputOuter {
+  position: relative;
+}
+
+.coverBg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.box {
+  width: 60rpx;
+  height: 60rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 3rpx;
+  margin-right: 10rpx;
+  color: #000;
+  position: relative;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.inputView {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+}
+
+/* 模拟光标 */
+
+.cursor {
+  position: absolute;
+  bottom: 2rpx;
+  left: 10rpx;
+  width: 40rpx;
+  height: 1rpx;
+  background-color: #333;
+  animation: focus 1.2s infinite;
+}
+
+/* 光标动画 */
+
+@keyframes focus {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

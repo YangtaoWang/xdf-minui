@@ -1,0 +1,14 @@
+<!--components/bind-input/bind-input.wxml-->
+<view class="inputOuter">
+  <view class="inputCover" catchtap="coverTap" bindlongpress="onLongPress">
+    <view class="coverBg">
+      <view class='box' wx:for="{{codeList}}" wx:key="index" catchtap="boxTap" data-index="{{index}}">
+        <text>{{item.value}}</text>
+        <view wx:if="{{activeIndex === index}}" class="cursor"></view>
+      </view>
+    </view>
+  </view>
+  <view class="inputView">
+    <input type="number" class="input" maxlength="16" focus="{{inputFocus}}" bindinput="onInput" hold-keyboard="{{true}}" auto-focus/>
+  </view>
+</view>

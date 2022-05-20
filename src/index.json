@@ -1,7 +1,8 @@
 {
   "component": true,
   "usingComponents": {
-    "other": "./other/other"
+    "other": "./components/other/other",
+    "bind-input": "./components/bind-input/bind-input"
   },
   "componentGenerics": {
     "genericsTest": true

@@ -4,7 +4,7 @@
  * @Author: wangyangtao@xdf.cn
  * @Date: 2022-02-25 14:39:08
  * @LastEditors: wangyangtao@xdf.cnn
- * @LastEditTime: 2022-05-19 18:36:12
+ * @LastEditTime: 2022-05-20 14:49:43
  * @Description: 绑定输入框组件
  */
 
@@ -144,7 +144,7 @@ Component({
     },
     dealNum(key) { // 处理数字
       const arr = this.data.codeList.map((item, index) => {
-        return Object.assign(item, {value: index === this.data.activeIndex ? key : item.value})
+        return {...item, value: index === this.data.activeIndex ? key : item.value}
       })
       this.setData({
         codeList: arr

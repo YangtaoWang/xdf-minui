@@ -3,7 +3,8 @@
         ["module-resolver", {
             "root": ["./src"],
             "alias": {}
-        }]
+        }],
+        "transform-object-rest-spread"
     ],
     "presets": [
         ["env", {"loose": true, "modules": "commonjs"}]
